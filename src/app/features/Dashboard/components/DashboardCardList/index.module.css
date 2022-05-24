@@ -1,0 +1,27 @@
+.dashboard-list {
+  padding: 8px 16px;
+}
+
+.car-details {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  cursor:pointer;
+  box-shadow: 1px 1px 4px 2px red;
+}
+
+.car-details > span {
+  margin-left: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.car-details > span:nth-child(2) {
+  font-size: 24px;
+}
+
+.car-image {
+  width: 400px;
+  height: 300px;
+}

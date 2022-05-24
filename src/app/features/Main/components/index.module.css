@@ -1,0 +1,31 @@
+.nav-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-header-image {
+  width: 120px;
+  height: 40px;
+  margin-left: 1rem;
+}
+
+.nav-list-body {
+  margin-right: 1rem;
+}
+
+.nav-header-link {
+  display: block;
+  padding: 0.6rem 1rem;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Inter";
+  transition: transform .5s ease-in-out;
+  display: inline-block;
+}
+
+.nav-header-link:hover {
+  background-color: rgb(143, 145, 141);
+  border-bottom: 5px solid red;
+  transform: scale(1.5);
+}
