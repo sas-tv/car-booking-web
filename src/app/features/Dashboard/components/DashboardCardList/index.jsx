@@ -1,6 +1,6 @@
 import CSSModules from "react-css-modules";
 import PropTypes from "prop-types";
-import { Grid } from "@chakra-ui/react";
+import { Button, Grid } from "@chakra-ui/react";
 
 import DefaultCar from "../../../../../DefaultCar.png";
 import styles from "./index.module.css";
@@ -12,6 +12,7 @@ const DashboardCardList = ({ carList }) => {
       <span>{name.toUpperCase()}</span>
       <span>Horse Power: {avg_horsepower}</span>
       <span>Showroom Price: {avg_price}</span>
+      <Button color="red" styleName="car-card-click">Explore</Button>
     </div>
   )
 

@@ -16,7 +16,7 @@ export const AppContextProvider = ({children}) => {
           setDashboardList(carList == null ? defaultDashboardList : carList),
         filteredDashboardList,
         setFilteredDashboardList: carList =>
-          setFilteredDashboardList(carList == null ? defaultDashboardList : carList),
+          setFilteredDashboardList(carList === null ? defaultDashboardList : carList),
         isDashboardListLoading,
         setDashboardListLoading: isLoading =>
           setDashboardListLoading(isLoading)

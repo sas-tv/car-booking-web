@@ -29,15 +29,16 @@ const Dashboard = () => {
     setDashboardListLoading(false);
   };
 
-  useEffect(() => {
-    if(dashboardList.length === 0 && !isDashboardListLoading) fetchData();
-  }, []);
-
   const filterCarsList = (type, search, sort) => {
     const carsList = getFilteredCarList(dashboardList, type, search, sort);
     setFilteredDashboardList(carsList);
   };
 
+  useEffect(() => {
+    if(dashboardList.length === 0 && !isDashboardListLoading) fetchData();
+  }, []);
+
+  console.log(filteredDashboardList);
   return (
     <div styleName="dashboard-root">
       <DashboardFilters filterCarsList={filterCarsList}/>
